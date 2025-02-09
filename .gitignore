@@ -1,0 +1,104 @@
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略编辑器生成的文件
+*.swp
+*.swo
+*.log
+*.bak
+*.tmp
+*.idea
+*.vscode
+*.suo
+*.user
+*.sln
+*.csproj.user
+
+# 忽略依赖目录
+node_modules/
+bower_components/
+vendor/
+dist/
+build/
+out/
+bin/
+obj/
+
+# 忽略日志文件
+*.log
+logs/
+
+# 忽略环境变量文件
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 忽略缓存文件
+.cache/
+*.cache
+
+# 忽略测试相关文件
+coverage/
+*.lcov
+
+# 忽略打包文件
+*.zip
+*.tar.gz
+*.rar
+
+# 忽略特定文件
+secrets.yml
+config.yml
+*.key
+*.pem
+*.crt
+
+# 忽略 IDE 配置文件
+.idea/
+.project
+.classpath
+.settings/
+
+# 忽略 Python 相关文件
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+*.egg-info/
+venv/
+env/
+.python-version
+
+# 忽略 Java 相关文件
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# 忽略 Ruby 相关文件
+*.gem
+.bundle/
+.ruby-version
+
+# 忽略 Go 相关文件
+bin/
+pkg/
+
+# 忽略 Rust 相关文件
+/target/
+**/*.rs.bk
+
+# 忽略 Docker 相关文件
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+
+# 忽略其他文件
+*.sqlite
+*.sqlite3
+*.db
