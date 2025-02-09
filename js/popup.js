@@ -38,6 +38,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // 执行搜索
   function executeSearch(query) {
     if (!query.trim()) return;
+    query = query.trim();
+
+    // 如果输入的是URL，直接打开
+    if (isValidUrl(query)) {
+        chrome.tabs.create({ url: query });
+        window.close();
+        return;
+    }
     
     const engine = currentEngine || defaultEngine;
     const searchUrl = engine.url + encodeURIComponent(query);
@@ -45,6 +53,14 @@ document.addEventListener('DOMContentLoaded', function() {
     window.close();
   }
 
+  function isValidUrl(string) {
+    try {
+        new URL(string);
+        return true;
+    } catch (_) {
+        return false;
+    }
+}
   // 监听快捷键重置
   chrome.commands.onCommand.addListener(function(command) {
     if (command === '_execute_action' && isWaitingForQuery) {
