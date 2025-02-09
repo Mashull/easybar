@@ -22,7 +22,7 @@
 
 ## ✨ 演示
 
-![功能演示](https://wmimg.com/i/1536/2025/02/67a82ee7d5f7a.gif)
+![演示](https://raw.githubusercontent.com/Mashull/my-pic-achv/main/easybar_show.gif)
 
 ## 🚀 快速开始
 
